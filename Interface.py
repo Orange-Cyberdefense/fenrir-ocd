@@ -71,7 +71,7 @@ class Interface(Cmd):
 	def do_destroy_virtual_tap(self,s):
 		self.FENRIR.downTap()
 
-	def help_create_virtual_tap(self):
+	def help_destroy_virtual_tap(self):
 		print("Deletes the virtual tap for FENRIR core module")
 
 
@@ -176,8 +176,8 @@ class Interface(Cmd):
 
 	def help_add_reverse_rule(self):
 		print("USAGE : add_reverse_rule <port> <type = unique> <proto = IP>")
-		print("Interface for adding port-specific rules to allow reverse connection to reach FENRIR. This is usefull for reverse shell or for server-based exploits & fun (Responder)")
-		print("Types include : \n\tunique = rule is triggered once before being deleted (usefull to get a reverse shell from one host) \n\tmulti = rule can be triggered multiple times (usefull for MitM stuff)")
+		print("Interface for adding port-specific rules to allow reverse connection to reach FENRIR. This is useful for reverse shell or for server-based exploits & fun (Responder)")
+		print("Types include : \n\tunique = rule is triggered once before being deleted (useful to get a reverse shell from one host) \n\tmulti = rule can be triggered multiple times (useful for MitM stuff)")
 
 	def complete_add_reverse_rule(self, match, line, bindex, eindex):
 		if bindex <= 16:
