@@ -122,7 +122,7 @@ class FENRIR:
 				roundstart_time = time.time()
 				### FROM NETWORK ###
 				if socketReady == self.s :
-					packet = self.s.recvfrom(1500)
+					packet = self.s.recvfrom(1600)
 					raw_pkt = packet[0]
 					if raw_pkt not in last_mangled_request: # pour éviter le sniff de paquets déjà traités
 						self.pktsCount += 1
