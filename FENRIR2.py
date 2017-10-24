@@ -89,9 +89,16 @@ class FENRIR:
 		self.scksnd1.bind((self.LhostIface, 0))
 		self.scksnd2.bind((self.switchIface, 0))
 		if interface == self.LhostIface:
-			self.scksnd1.send(raw)
+			# This is a dirty hotfix for the fragmentation problem; will be fixed later
+			try:
+				self.scksnd1.send(raw)
+			except:
+				pass
 		else :
-			self.scksnd2.send(raw)
+			try:
+				self.scksnd2.send(raw)
+			except:
+				pass
 		return
 
 	def initAutoconf(self):
