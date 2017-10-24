@@ -33,6 +33,9 @@ FENRIR is a tool designed to be used "out-of-the-box" for penetration tests and 
 
 **Keep in mind FENRIR is still a _Work in Progress_**
 
+Branches : 
++ master : main branch for (relatively) stable code
++ bleeding : branch with hotfixes and latest updates
 
 # Usage
 
@@ -129,6 +132,7 @@ If you have found a bug, report it to me ! I'll look at it as quickly as i can.
 + apt-get install python-dev
 + pip install python-pytun
 + pip install scapy
++ pip install Cmd2
 + git clone *this repo*
 
 For running FENRIR 
