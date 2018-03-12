@@ -153,8 +153,7 @@ Also, if you want to chat about the project or ask questions, you can shoot me a
 
 # Docs & Vids
 
-My presentation of 802.1x bypass techniques and FENRIR will be available shortly on the Hack in Paris website  
-Link : To be added when released
+My presentation of 802.1x bypass techniques and FENRIR are available on the [Hack in Paris website](https://hackinparis.com/archives/2017/#talk-2017-Network-Access-Control-and-Bypass-Techniques)  
 
 
 # License
