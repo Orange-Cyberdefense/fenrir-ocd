@@ -126,7 +126,9 @@ class Interface(Cmd):
 			print("*** Invalid number of arguments")
 			self.help_set()
 		else:
-			if args[0] == "host_mac":
+			if args[0] == "debug":
+				Cmd.do_set(self, argString)
+			elif args[0] == "host_mac":
 				attrValue = self.strToHex(args[1])
 			else:
 				attrValue = args[1]

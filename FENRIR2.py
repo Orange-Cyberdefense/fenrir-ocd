@@ -89,9 +89,16 @@ class FENRIR:
 		self.scksnd1.bind((self.LhostIface, 0))
 		self.scksnd2.bind((self.switchIface, 0))
 		if interface == self.LhostIface:
-			self.scksnd1.send(raw)
+			# This is a dirty hotfix for the fragmentation problem; will be fixed later
+			try:
+				self.scksnd1.send(raw)
+			except:
+				pass
 		else :
-			self.scksnd2.send(raw)
+			try:
+				self.scksnd2.send(raw)
+			except:
+				pass
 		return
 
 	def initAutoconf(self):
@@ -115,7 +122,7 @@ class FENRIR:
 				roundstart_time = time.time()
 				### FROM NETWORK ###
 				if socketReady == self.s :
-					packet = self.s.recvfrom(1500)
+					packet = self.s.recvfrom(1600)
 					raw_pkt = packet[0]
 					if raw_pkt not in last_mangled_request: # pour éviter le sniff de paquets déjà traités
 						self.pktsCount += 1
