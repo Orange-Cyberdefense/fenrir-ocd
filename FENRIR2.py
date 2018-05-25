@@ -134,6 +134,8 @@ class FENRIR:
 							epkt = pkt
 						elif 'EAPOL' in pkt :
 							epkt = pkt
+						elif 'BOOTP' in pkt :
+							epkt = pkt
 						else:
 							break
 		##### NBT-NS
