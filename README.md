@@ -148,7 +148,7 @@ If you have any problem with installation, shoot me an email ! I can probably he
 The project is open for pull requests and bug reports ! The great thing is I would be more than happy to offer you a beer for any form of contribution. Please participate in this project and help me make it better :)  
 And if you don't know where to start or want some help, do not hesitate to contact me !
 
-Also, if you want to chat about the project or ask questions, you can shoot me an email at __valerian.legrand@orange.com__ or you can also find me on IRC : __WaffleWrath__
+Also, if you want to chat about the project or ask questions, you can find me on IRC : __WaffleWrath__
 
 
 # Docs & Vids
