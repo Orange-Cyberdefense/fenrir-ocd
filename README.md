@@ -168,4 +168,4 @@ _This software is licensed under the terms of the MIT license_
 
 
 ---
-*by Valérian Legrand (original developer), Andrei Dumitrescu and Quentin Biguenet (contributors)*
+*by Valérian Legrand (main developer), Andrei Dumitrescu and Quentin Biguenet (contributors)*
