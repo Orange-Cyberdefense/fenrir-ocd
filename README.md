@@ -135,6 +135,12 @@ If you have found a bug, report it to me ! I'll look at it as quickly as i can.
 + pip install Cmd2
 + git clone *this repo*
 
+# IMPORTANT
+
+It seems that with the arrival of Python3 some prerequisite packages are now bugged. For now, to avoid bugs while we migrate this tool to Python3, one should remove any files from the following packages and install them like this:
++ sudo -H -E pip install "cmd2<=0.7.0"
++ sudo -H -E pip install "scapy<=2.3.2"
+
 For running FENRIR 
 + sysctl net.ipv4.ip_forward=1
 + ifconfig *iface1* promisc
