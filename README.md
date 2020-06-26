@@ -135,7 +135,7 @@ If you have found a bug, report it to me ! I'll look at it as quickly as i can.
 + pip install Cmd2
 + git clone *this repo*
 
-# IMPORTANT
+# Important note on install
 
 It seems that with the arrival of Python3 some prerequisite packages are now bugged. For now, to avoid bugs while we migrate this tool to Python3, one should remove any files from the following packages and install them like this:
 + sudo -H -E pip install "cmd2<=0.7.0"
@@ -168,4 +168,4 @@ _This software is licensed under the terms of the MIT license_
 
 
 ---
-*by Valérian Legrand*
+*by Valérian Legrand (original developer), Andrei Dumitrescu and Quentin Biguenet (contributors)*
