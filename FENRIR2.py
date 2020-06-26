@@ -124,7 +124,7 @@ class FENRIR:
 				if socketReady == self.s :
 					packet = self.s.recvfrom(1600)
 					raw_pkt = packet[0]
-					if raw_pkt not in last_mangled_request: # pour éviter le sniff de paquets déjà traités
+					if raw_pkt not in last_mangled_request: # pour éviter le sniff de paquets déjà traités (to avoid sniffing packets that have already by processed)
 						self.pktsCount += 1
 						pkt = Ether(packet[0])
 						if self.FenrirFangs.checkRules(pkt) == True:
